@@ -1,0 +1,47 @@
+body {
+    background-color: lightgray;
+    color: lightyellow;
+    margin: 0;
+}
+
+section {
+    display : flex;
+    flex-direction: row;
+}
+
+nav, aricle  {
+   padding: 5px;
+}
+header, footer{
+    text-align: center;
+    background-color: lightgray;
+    color: yellow;
+}
+
+nav {
+    height: 500px;
+    background-color: yellow;
+    color: black;
+    flex: 20%;
+}
+nav a {
+    display: block;
+}
+a, a:visited {
+    color: red; 
+}
+a:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+article {
+    background-color : black;
+    flex: 80%;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        flex-direction: column;
+    }
+}
